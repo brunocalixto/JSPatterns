@@ -1,0 +1,10 @@
+var taskHandler = require('./taskHandler')
+var myRepo = require('./Repo2')
+
+myRepo.save('fromMain 1')
+myRepo.save('fromMain 2')
+myRepo.save('fromMain 3')
+taskHandler.save()
+taskHandler.save()
+taskHandler.save()
+taskHandler.save()
