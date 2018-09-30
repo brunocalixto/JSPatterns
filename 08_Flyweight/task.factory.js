@@ -22,3 +22,5 @@ var FlyweightFactory = function() {
         getCount: getCount
     }
 }
+
+module.exports = FlyweightFactory()

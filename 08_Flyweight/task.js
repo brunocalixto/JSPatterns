@@ -1,4 +1,4 @@
-var FlyweightFactory = require('./flyweightFactory')
+var FlyweightFactory = require('./task.factory')
 
 var Task = function(data) {
     this.flyweight = FlyweightFactory.get(data.priority, data.project, data.user, data.completed)

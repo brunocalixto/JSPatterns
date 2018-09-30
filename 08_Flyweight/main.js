@@ -1,5 +1,5 @@
 var TaskCollection = require('./task.collection')
-var FlyweightFactory = require('./flyweightFactory')
+var TaskFactory = require('./task.factory')
 
 var projects = ['none', 'courses', 'training', 'project']
 var prorities = [1, 2, 3, 4, 5]
@@ -21,4 +21,4 @@ for(var i = 0; i < 100000; i++) {
 var afterMemory = process.memoryUsage().heapUsed
 console.log('used memory ' + (afterMemory - initialMemory) / 1000000)
 console.log('Tasks: ', TaskCollection.getCount())
-console.log('FlyweightFactory: ', FlyweightFactory.getCount())
+console.log('TaskFactory: ', TaskFactory.getCount())
