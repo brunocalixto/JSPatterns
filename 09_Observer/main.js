@@ -11,9 +11,9 @@ var audit = new auditingService()
 task1.addObserver(not.update)
 task1.addObserver(ls.update)
 task1.addObserver(audit.update)
-
 task1.save()
 
-task1.getObserver(1)
+task1.removeObserver(audit.update)
+task1.save()
 
 // node --inspect-brk main.js

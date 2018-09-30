@@ -6,8 +6,19 @@ ObserverList.prototype.add = function(obj) {
     return this.observerList.push(obj)
 }
 
-ObserverList.prototype.remove = function() {
-    
+ObserverList.prototype.removeAt = function(index) {
+    this.observerList.splice(index, 1)
+}
+
+ObserverList.prototype.indexOf = function(obj, startIndex) {
+    var i = startIndex
+    while(i < this.observerList.length) {
+        if(this.observerList === obj) {
+            return i
+        }
+        i++
+    }
+    return -1
 }
 
 ObserverList.prototype.get = function(index) {

@@ -10,6 +10,10 @@ TaskObservable.prototype.addObserver = function(observer) {
     this.observers.add(observer)
 }
 
+TaskObservable.prototype.removeObserver = function(observer) {
+    this.observers.removeAt(this.observers.indexOf(observer, 0))
+}
+
 TaskObservable.prototype.getObserver = function(index) {
     var observerCount = this.observers.count()
     if(index > -1 && index < observerCount) {
