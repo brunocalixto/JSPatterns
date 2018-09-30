@@ -13,7 +13,7 @@ ObserverList.prototype.removeAt = function(index) {
 ObserverList.prototype.indexOf = function(obj, startIndex) {
     var i = startIndex
     while(i < this.observerList.length) {
-        if(this.observerList === obj) {
+        if(this.observerList[i] === obj) {
             return i
         }
         i++
